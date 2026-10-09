@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="K.V. Sheedge Painting Contractor offers home painting, bungalow painting, commercial painting and waterproofing solutions in Kondhwa BK, Pune."
+    />
+    <title>K.V. Sheedge | Painting Contractor in Pune</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #16395e;
+        --ink: #172536;
+        --muted: #64748b;
+        --cream: #faf8f5;
+        --orange: #ff7b42;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        font-family: "DM Sans", sans-serif;
+        color: var(--ink);
+      }
+      h1,
+      h2,
+      h3,
+      .brand {
+        font-family: Outfit, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .container {
+        max-width: 1180px;
+        margin: auto;
+        padding: 0 22px;
+      }
+      header {
+        background: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        box-shadow: 0 3px 25px #182a3b12;
+      }
+      .top {
+        background: var(--navy);
+        color: #fff;
+        font-size: 13px;
+        padding: 9px 0;
+      }
+      .top .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 22px;
+        font-weight: 800;
+        color: var(--navy);
+      }
+      .brand img {
+        width: 61px;
+        height: 61px;
+        object-fit: contain;
+      }
+      .brand small {
+        display: block;
+        font:
+          600 10px "DM Sans",
+          sans-serif;
+        letter-spacing: 2px;
+        color: #64748b;
+      }
+      .links {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9px;
+        padding: 15px 23px;
+        font-weight: 700;
+        background: var(--navy);
+        color: #fff;
+        transition: 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        background: #255782;
+      }
+      .btn.light {
+        background: white;
+        color: var(--navy);
+      }
+      .btn.outline {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+      .menu {
+        display: none;
+        background: none;
+        border: 0;
+        font-size: 28px;
+      }
+      .hero {
+        min-height: 620px;
+        display: flex;
+        align-items: center;
+        background:
+          linear-gradient(
+            90deg,
+            rgba(12, 32, 52, 0.92),
+            rgba(12, 32, 52, 0.72) 49%,
+            rgba(12, 32, 52, 0.18)
+          ),
+          url("https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1900&q=85")
+            center/cover;
+        color: #fff;
+      }
+      .hero-inner {
+        padding-top: 90px;
+        padding-bottom: 95px;
+      }
+      .eyebrow {
+        font-weight: 800;
+        letter-spacing: 2.3px;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #ffcf7e;
+      }
+      .hero h1 {
+        font-size: clamp(40px, 5.6vw, 76px);
+        line-height: 1.08;
+        max-width: 760px;
+        margin: 20px 0;
+      }
+      .hero h1 span {
+        color: #ffca7d;
+      }
+      .hero p {
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 610px;
+        color: #e5edf5;
+      }
+      .actions {
+        display: flex;
+        gap: 13px;
+        flex-wrap: wrap;
+        margin-top: 32px;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: -47px;
+        position: relative;
+      }
+      .feature {
+        background: #fff;
+        padding: 27px;
+        border-radius: 14px;
+        box-shadow: 0 14px 45px #14263b17;
+        border-top: 4px solid var(--orange);
+      }
+      .feature:nth-child(2) {
+        border-color: #45b96c;
+      }
+      .feature:nth-child(3) {
+        border-color: #408ed7;
+      }
+      .feature h3 {
+        margin: 0 0 8px;
+        font-size: 19px;
+      }
+      .feature p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 14px;
+      }
+      section {
+        padding: 95px 0;
+      }
+      .section-head {
+        text-align: center;
+        max-width: 720px;
+        margin: 0 auto 42px;
+      }
+      .tag {
+        color: #df7046;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: 800;
+      }
+      h2 {
+        font-size: clamp(30px, 4vw, 46px);
+        line-height: 1.18;
+        margin: 12px 0 16px;
+      }
+      p {
+        line-height: 1.8;
+      }
+      .section-head p,
+      .about p {
+        color: var(--muted);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 65px;
+        align-items: center;
+      }
+      .about-img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .checks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin: 25px 0;
+      }
+      .checks div {
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .checks div:before {
+        content: "✓";
+        color: #2bb96e;
+        margin-right: 9px;
+      }
+      .services {
+        background: var(--cream);
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 23px;
+      }
+      .service {
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 6px 25px #1725360a;
+      }
+      .service img {
+        width: 100%;
+        height: 215px;
+        object-fit: cover;
+      }
+      .service .info {
+        padding: 25px;
+      }
+      .service h3 {
+        font-size: 22px;
+        margin: 0 0 10px;
+      }
+      .service p {
+        color: var(--muted);
+        font-size: 14px;
+        margin: 0;
+      }
+      .why {
+        background: #173957;
+        color: white;
+      }
+      .why .section-head p {
+        color: #d4dfeb;
+      }
+      .why-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .why-item {
+        border: 1px solid #ffffff30;
+        border-radius: 14px;
+        padding: 25px;
+      }
+      .why-item strong {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 9px;
+      }
+      .why-item p {
+        color: #d7e3ee;
+        font-size: 14px;
+        margin: 0;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .gallery img {
+        width: 100%;
+        height: 265px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+      .contact {
+        background: var(--cream);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+      }
+      .contact-panel {
+        background: #fff;
+        padding: 35px;
+        border-radius: 17px;
+      }
+      .contact-panel h3 {
+        font-size: 25px;
+      }
+      .contact-line {
+        padding: 16px 0;
+        border-bottom: 1px solid #e9edf1;
+      }
+      .contact-line strong {
+        display: block;
+        margin-bottom: 7px;
+      }
+      .contact-line a {
+        color: var(--navy);
+      }
+      form {
+        display: grid;
+        gap: 13px;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        border: 1px solid #dbe2e8;
+        border-radius: 8px;
+        padding: 14px;
+        font: inherit;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      button.btn {
+        border: 0;
+        cursor: pointer;
+        font:
+          700 15px "DM Sans",
+          sans-serif;
+      }
+      footer {
+        background: #0c243a;
+        color: #cbd8e6;
+        padding: 35px 0;
+      }
+      footer .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+      footer strong {
+        color: #fff;
+      }
+      .floating {
+        position: fixed;
+        bottom: 20px;
+        z-index: 30;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        color: #fff;
+        box-shadow: 0 7px 25px #0003;
+        font-size: 23px;
+        font-weight: 800;
+      }
+      .call {
+        left: 20px;
+        background: #174a84;
+      }
+      .wa {
+        right: 20px;
+        background: #20b65b;
+      }
+      @media (max-width: 850px) {
+        .menu {
+          display: block;
+        }
+        .links {
+          display: none;
+          position: absolute;
+          top: 82px;
+          left: 0;
+          right: 0;
+          background: #fff;
+          flex-direction: column;
+          align-items: stretch;
+          padding: 24px;
+          box-shadow: 0 15px 20px #0002;
+        }
+        .links.open {
+          display: flex;
+        }
+        .nav > .btn {
+          display: none;
+        }
+        .about-grid,
+        .contact-grid {
+          grid-template-columns: 1fr;
+        }
+        .cards,
+        .features {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .about-img {
+          height: 320px;
+        }
+      }
+      @media (max-width: 550px) {
+        .top {
+          font-size: 11px;
+        }
+        .brand {
+          font-size: 17px;
+        }
+        .brand img {
+          width: 49px;
+          height: 49px;
+        }
+        .hero {
+          min-height: 580px;
+        }
+        .hero-inner {
+          padding-top: 75px;
+          padding-bottom: 95px;
+        }
+        .hero p {
+          font-size: 16px;
+        }
+        .features,
+        .cards,
+        .why-grid,
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+        .gallery img {
+          height: 240px;
+        }
+        .checks {
+          grid-template-columns: 1fr;
+        }
+        section {
+          padding: 70px 0;
+        }
+        .feature {
+          padding: 22px;
+        }
+        .features {
+          margin-top: -38px;
+        }
+        .contact-panel {
+          padding: 23px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="container">
+      
+      </div>
+    </div>
+    <header>
+      <div class="container nav">
+        <a href="#home" class="brand"
+          ><img src="ks-logo.png" alt="KS logo" /><span
+            >K.V. SHEEDGE<small>PAINTING CONTRACTOR</small></span
+          ></a
+        ><button
+          class="menu"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          onclick="
+            const m = document.querySelector('.links');
+            m.classList.toggle('open');
+            this.setAttribute('aria-expanded', m.classList.contains('open'));
+          "
+        >
+          ☰
+        </button>
+        <nav class="links">
+          <a href="#home">Home</a><a href="#about">About Us</a
+          ><a href="#services">Services</a><a href="#gallery">Gallery</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <a class="btn" href="tel:+919011902540">Get a Free Enquiry</a>
+      </div>
+    </header>
+    <main>
+      <div id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="eyebrow">Your Trusted Painting Partner in Pune</div>
+          <h1>Bring New Life to <span>Every Wall.</span></h1>
+          <p>
+            Beautiful finishes, thoughtful colour choices and dependable
+            painting and waterproofing solutions for flats, bungalows, row
+            houses and commercial spaces.
+          </p>
+          <div class="actions">
+            <a class="btn" style="background: #f18a50" href="#contact"
+              >Get a Free Enquiry →</a
+            ><a class="btn outline" href="#services">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+      <div class="container features">
+        <div class="feature">
+          <h3>Residential Painting</h3>
+          <p>
+            Fresh, beautiful interiors and exteriors for flats, bungalows and
+            row houses.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Commercial Projects</h3>
+          <p>
+            Professional painting solutions for offices, shops and other spaces.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Waterproofing Solutions</h3>
+          <p>Protect your property from dampness, seepage and water damage.</p>
+        </div>
+      </div>
+      <section id="about">
+        <div class="container about-grid">
+          <img
+            class="about-img"
+            src="https://images.unsplash.com/photo-1595814433015-e6f5ce69614e?auto=format&fit=crop&w=1100&q=85"
+            alt="Professional painter working on a wall"
+          />
+          <div class="about">
+            <div class="tag">About K.V. Sheedge</div>
+            <h2>Quality Painting That Makes a Lasting Impression</h2>
+            <p>
+              At K.V. Sheedge Painting Contractor, we help homeowners and
+              businesses refresh, transform and protect their spaces. Based in
+              Kondhwa BK, Pune, we provide painting work and waterproofing
+              solutions tailored to your property.
+            </p>
+            <p>
+              From a single room makeover to a full bungalow or commercial
+              building, we focus on careful preparation, neat finishes and clear
+              communication.
+            </p>
+            <div class="checks">
+              <div>Interior & Exterior Painting</div>
+              <div>Flats & Bungalows</div>
+              <div>Row Houses & Offices</div>
+              <div>Waterproofing Work</div>
+            </div>
+            <a class="btn" href="#contact">Discuss Your Project →</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-head">
+            <div class="tag">What We Do</div>
+            <h2>Our Painting & Waterproofing Services</h2>
+            <p>
+              Solutions to refresh your interiors, enhance curb appeal and
+              protect your walls.
+            </p>
+          </div>
+          <div class="cards">
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=900&q=80"
+                alt="Interior painting work"
+              />
+              <div class="info">
+                <h3>Interior Painting</h3>
+                <p>
+                  Give your living rooms, bedrooms and workspaces a fresh look
+                  with clean, attractive wall finishes.
+                </p>
+              </div>
+            </article>
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+                alt="Beautiful home exterior"
+              />
+              <div class="info">
+                <h3>Exterior Painting</h3>
+                <p>
+                  Improve the appearance of your building with exterior wall
+                  painting and surface preparation.
+                </p>
+              </div>
+            </article>
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+                alt="Freshly finished residential interior"
+              />
+              <div class="info">
+                <h3>Flat & Bungalow Painting</h3>
+                <p>
+                  Complete painting work for flats, row houses, bungalows and
+                  residential properties.
+                </p>
+              </div>
+            </article>
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"
+                alt="Modern commercial office"
+              />
+              <div class="info">
+                <h3>Commercial Painting</h3>
+                <p>
+                  Professional painting for offices, retail spaces and
+                  commercial buildings.
+                </p>
+              </div>
+            </article>
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80"
+                alt="Well maintained home interior"
+              />
+              <div class="info">
+                <h3>Wall Repainting</h3>
+                <p>
+                  Refresh tired walls with surface preparation and carefully
+                  applied new coats of paint.
+                </p>
+              </div>
+            </article>
+            <article class="service">
+              <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+                alt="Protected modern home interior"
+              />
+              <div class="info">
+                <h3>Waterproofing Solutions</h3>
+                <p>
+                  Discuss practical treatment options for seepage, damp patches
+                  and water-related wall problems.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="why">
+        <div class="container">
+          <div class="section-head">
+            <div class="tag">Why Choose Us</div>
+            <h2>Care in Every Coat</h2>
+            <p>
+              We approach each project with attention to your space, your needs
+              and the finish you want.
+            </p>
+          </div>
+          <div class="why-grid">
+            <div class="why-item">
+              <strong>Neat Finishing</strong>
+              <p>
+                Attention to detail from wall preparation through the final
+                coat.
+              </p>
+            </div>
+            <div class="why-item">
+              <strong>Tailored Solutions</strong>
+              <p>Painting and waterproofing options based on your property.</p>
+            </div>
+            <div class="why-item">
+              <strong>Clear Discussion</strong>
+              <p>Understand the scope of work before your project begins.</p>
+            </div>
+            <div class="why-item">
+              <strong>Local Service</strong>
+              <p>Conveniently based in Kondhwa BK, Pune.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="container">
+          <div class="section-head">
+            <div class="tag">Inspiration Gallery</div>
+            <h2>Spaces That Inspire</h2>
+            <p>
+              Sample design inspiration. Actual project photos can be added
+              here.
+            </p>
+          </div>
+          <div class="gallery">
+            <img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80"
+              alt="Elegant living room"
+            /><img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"
+              alt="Modern interior wall finish"
+            /><img
+              loading="lazy"
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80"
+              alt="Residential painting inspiration"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-head">
+            <div class="tag">Get in Touch</div>
+            <h2>Let's Give Your Space a Fresh Look</h2>
+            <p>
+              Tell us what you need painted or waterproofed. Contact our team to
+              discuss your project.
+            </p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-panel">
+              <h3>Contact Information</h3>
+              <div class="contact-line">
+                <strong>Phone Numbers</strong
+                ><a href="tel:+919011902540">+91 9011902540</a><br /><a
+                  href="tel:+919604734341"
+                  >+91 9604734341</a
+                >
+              </div>
+              <div class="contact-line">
+                <strong>Office Address</strong>Sr. No. 13, Kondhwa BK, Pune –
+                411048, Maharashtra
+              </div>
+              <div class="contact-line">
+                <strong>Services</strong>Painting Work • Waterproofing Solutions
+              </div>
+              <p>
+                <a
+                  class="btn"
+                  href="https://www.google.com/maps/search/?api=1&query=Sr+No+13+Kondhwa+BK+Pune+411048"
+                  target="_blank"
+                  rel="noopener"
+                  >View Location on Maps →</a
+                >
+              </p>
+            </div>
+            <div class="contact-panel">
+              <h3>Request a Callback</h3>
+              <form id="enquiry">
+                <input name="name" placeholder="Your Name" required /><input
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone Number"
+                  required
+                /><select name="service" required>
+                  <option value="">Select Service</option>
+                  <option>Interior Painting</option>
+                  <option>Exterior Painting</option>
+                  <option>Flat / Bungalow Painting</option>
+                  <option>Commercial Painting</option>
+                  <option>Waterproofing</option>
+                  <option>Other</option></select
+                ><textarea
+                  name="message"
+                  placeholder="Tell us about your project"
+                ></textarea
+                ><button class="btn" type="submit">
+                  Send Enquiry on WhatsApp →
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <strong>K.V. SHEEDGE</strong><br />Painting Contractor • Kondhwa BK,
+          Pune
+            <span
+          >Call: <a href="tel:+919011902540">9011902540</a> /
+          <a href="tel:+919604734341">9604734341</a></span
+        >
+        </div>
+        <div>© <span id="year"></span> K.V. Sheedge. All rights reserved.</div>
+      </div>
+    </footer>
+    <a class="floating call" href="tel:+919011902540" aria-label="Call us">☎</a
+    ><a
+      class="floating wa"
+      href="https://wa.me/919011902540?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20painting%20services."
+      target="_blank"
+      rel="noopener"
+      aria-label="WhatsApp us"
+      >✆</a
+    >
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document
+        .querySelectorAll(".links a")
+        .forEach((a) =>
+          a.addEventListener("click", () =>
+            document.querySelector(".links").classList.remove("open"),
+          ),
+        );
+      document.getElementById("enquiry").addEventListener("submit", (e) => {
+        e.preventDefault();
+        let d = new FormData(e.target);
+        let msg = `Hello K.V. Sheedge, I would like to enquire about your services.\nName: ${d.get("name")}\nPhone: ${d.get("phone")}\nService: ${d.get("service")}\nMessage: ${d.get("message")}`;
+        window.open(
+          "https://wa.me/919011902540?text=" + encodeURIComponent(msg),
+          "_blank",
+          "noopener",
+        );
+      });
+    </script>
+  </body>
+</html>
